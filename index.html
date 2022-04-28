@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Sección de meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Tokyo Revenger, Toman, Mikey, Takemichi">
+        <meta name="description" content="Toman.es, es una página destinada a aquellos que quieran ingresar o simplemente adentrarse aún más al mundo de Tokyo Revenger, sean todos bienvenidos.">
+        <meta name="author" content="Valentín Meier">
+        <meta name="copyright" content="Valentin Meier">
+        <meta name="robots" content="index">
+        <meta name="robots" content="follow">
+        <!-- Sección link -->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="icon" href="imágenes/iconos/toman-icon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&family=Raleway:wght@100&family=Vollkorn&display=swap" rel="stylesheet">
+        <title>Toman.es</title>
+    </head>
+    <body>
+        <header>
+            <div class="index-header-cont">
+                <img src="imágenes/iconos/sound.png" alt="sonido prendido" class="nav__sonido-on" id="icon">
+                <audio src="music/music-index.mp3" id="mySong" type="audio/mp3"></audio>
+            </div>
+        </header>
+        <main>
+            <div class="index-main-cont">
+                <div class="logo-index">
+                    <img src="imágenes/imagenes-html/tomanlogo.png">
+                    <h3>Toman<b>.es</b></h3>
+                    <p>Copyright © Valentin Meier.<br>Todos los derechos reservados</p>
+                </div> 
+            </div>
+        </main>
+        <footer>
+            <div class="index-footer-cont">
+                <a class="btn-index" href="./html/proyecto/inicio.html">ingresar</a>
+            </div>
+        </footer>
+        <!-- fondo phone -->
+        <img src="imágenes/imagenes-html/fondo-index.jpg" class="fondo-index-phone">
+        <!-- fondo desktop   -->
+        <video src="videos/Area-fondos/index-fondo.mp4" autoplay loop muted class="fondo-index">
+        </video>
+        <div class="capa-index"></div>
+        <script>
+            var mySong = document.getElementById ("mySong")
+            var icon = document.getElementById ("icon")
+            icon.onclick = function () {
+                if(mySong.paused) {
+                    mySong.play();
+                    icon.src = "imágenes/iconos/sound.png";
+                }else{
+                    mySong.pause();
+                    icon.src = "imágenes/iconos/mute.png";
+                }
+            }
+        </script>
+    </body>
+</html>    

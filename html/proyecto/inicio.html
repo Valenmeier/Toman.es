@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <!-- Sección de meta -->
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="keywords" content="Tokyo Revenger, Toman, Mikey, Takemichi">
+            <meta name="description" content="Toman.es, es una página destinada a aquellos que quieran ingresar o simplemente adentrarse aún más al mundo de Tokyo Revenger, sean todos bienvenidos.">
+            <meta name="author" content="Valentín Meier">
+            <meta name="copyright" content="Valentin Meier">
+            <meta name="robots" content="index">
+            <meta name="robots" content="follow">
+            <!-- Sección link -->           
+            <link rel="icon" href="../../imágenes/iconos/toman-icon.ico">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&family=Raleway:wght@100&family=Vollkorn&display=swap" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+            <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
+            <title>Toman.es</title>
+    </head>
+    <body>
+        <header>
+                <nav class="navbar navbar-expand-lg navbar-dark-2 bg-dark-2 fixed-top">
+                        <div class="container-fluid">
+                                <img src="../../imágenes/iconos/sound.png" alt="sonido prendido" class="nav-sonido-on w-xxl-25" id="icon">
+                                <audio src="../../music/music-inicio.mp3" id="mySong" type="audio/mp3"></audio>
+                                <script>
+                                    var mySong = document.getElementById ("mySong")
+                                    var icon = document.getElementById ("icon")
+                                    icon.onclick = function () {
+                                        if(mySong.paused) {
+                                            mySong.play();
+                                            icon.src = "../../imágenes/iconos/sound.png";
+                                        }else{
+                                            mySong.pause();
+                                            icon.src = "../../imágenes/iconos/mute.png";
+                                        }
+                                    }
+                                </script>                  
+                                <a class="navbar-brand" href="./inicio.html">
+                                        <img src="../../imágenes/imagenes-html/tomanlogo.png" alt="" class="d-inline-block align-text-center logo-toman">
+                                        Toman<b class="text-danger">.es</b>
+                                </a>
+                          <button class="navbar-toggler d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="off">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"  fill="gray" class="bi bi-list" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                          </button>
+                          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                            <ul class="navbar-nav gap-4 me-3 mtop-4 text-center" id="no-margin-top" >
+                              <li class="nav-item">
+                                <a class="nav-link fs-4" id="sombra-nav" aria-current="page" href="./inicio.html">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link fs-4" id="sombra-nav" href="./multimedia.html">Multimedia</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link fs-4 "id="sombra-nav"  href="./personajes.html">Personajes</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fs-4" id="sombra-nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Más...
+                                </a>
+                                <ul class="dropdown-menu bg-dark-2" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item fs-4 text-secondary-2 d-inline" id="sombra-nav" href="./ayudanos.html">-Ayudanos</a></li>
+                                  <li><a class="dropdown-item fs-4 text-secondary-2" id="sombra-nav" href="./contactanos.html">-Contactanos</a></li>
+                                  <li><a class="dropdown-item fs-4 text-secondary-2" id="sombra-nav" href="./sobre-nosotros.html">-Sobre nosotros</a></li>
+                                  <li><a class="dropdown-item fs-4 text-secondary-2" id="sombra-nav" href="./terminos-de-servicio.html">-Terminos de servicio</a></li>
+                                  <li><a class="dropdown-item fs-4 text-secondary-2" id="sombra-nav" href="./politicas-de-privacidad.html">-Politicas de privacidad</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active fs-4" id="sombra-nav" href="./inicio-de-sesión.html">INGRESAR</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+        </header>
+        <main class="main-inicio">
+              <section class="vw-100 vh-100 position-absolute top-0 start-0">
+                        <video src="../../videos/Area-fondos/inicio-fondo.mp4" autoplay muted loop class="vw-100 vh-100 position-absolute top-0 start-0 video-seccion1" ></video>
+                        <div class="capa vw-100 vh-100 position-absolute top-0 start-0"></div>
+                        <div class="container-personalizado vw-100 vh-100 position-absolute top-0 start-0">
+                          <div class="informacionpc">
+                            <img src="../../imágenes/imagenes-html/tomanlogo.png">
+                            <h4>Toman<b>.es</b></h4>
+                            <p>Copyright © Valentin Meier. Todos los <br>derechos reservados.</p>
+                          </div> 
+                          <div class=" d-flex flex-column sección1-superior justify-content-around align-items-center">
+                            <div class="d-flex flex-column justify-content-center align-items-center">  
+                              <img src="../../imágenes/imagenes-html/tomanlogo.png" width="200vw" class="borrar-en-pc">
+                              <h1 >Tokyo Revenger</h1>
+                              <h3>Fan Page</h3>
+                            </div>
+                            <div class="barras-guia d-flex flex-column flex-end gap-2">
+                              <img src="../../imágenes/imagenes-html/barras-para-guiar.webp" class="parpadeo-1">
+                              <img src="../../imágenes/imagenes-html/barras-para-guiar.webp" class="parpadeo-2">
+                              <img src="../../imágenes/imagenes-html/barras-para-guiar.webp" class="parpadeo-3">
+                            </div> 
+                          </div>            
+                        </div>
+              </section>
+              <section class="vw-100 vh-100 position-absolute sección2-inicio">
+                <div class="fondo-seccion2-android" width="100%">
+                    <img src="../../imágenes/imagenes-html/fondo-inicio2.jpg">
+                    <div class="capa-seccion2"></div>
+                </div>
+                <div class="fondo-seccion2-pc">
+                  <div class="capa-seccion2"></div>
+                </div>
+                  <div class="inicio-seccion2">
+                          <div class="titulo-seccion2">
+                            <img src="../../imágenes/imagenes-html/flecha.png">
+                            <h4>Sinopsis</h4>
+                            <img src="../../imágenes/imagenes-html/flecha.png" class="rotacion-1">
+                          </div>
+                          <div class="contenido-seccion2-inicio">
+                            <div class="card card-incio mb-3 mtop-4" style="max-width: 100%; max-height: 100%;">
+                              <div class="row g-0 ">
+                                <div class="col-md-12 col-lg-6 color-fondo">
+                                  <video src="../../videos/Area-fondos/inicio-fondo.mp4" autoplay muted loop class="slider-reemplazo video-1"></video>
+                                  <video src="../../videos/Area-fondos/Slider-reemplazo.webm" autoplay muted loop class="slider-reemplazo video-2"></video>
+                                </div>
+                                <div class="col-md-12 col-lg-6 color-fondo">
+                                  <div class="card-body ">
+                                    <h5 class="card-title card-inicio-title">Tokyo Revenger</h5>
+                                    <div class="card-text card-inicio-text"><p>Tokyo Revengers es una serie anime que sigue a Takemichi, un chico que a sus 26 años cree que ya ha arruinado su vida. Viviendo a través de trabajos esporádicos lo suficientemente buenos como para pagar el alquiler, su vida se ve aún peor cuando se entera de la muerte de Hinata, la única novia que ha tenido. <br>
+                                      Hinata ha muerto debido a un ajuste de cuentas entre los miembros de una pandilla: la Tokyo Manji. Aún en estado de shock, Takemichi es víctima de un accidente que le hace retroceder 12 años, cuando él estaba en la universidad. <br>¿Tomará esta oportunidad para salvar a Hinata?</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+              </section>
+              <section class="vw-100 vh-100 position-absolute sección3-inicio">
+                  <a href="./personajes.html#takemichi"><img src="../../imágenes/imagenes-html/fondo1.jpg"></a>
+                  <a href="./personajes.html#mikey"><img src="../../imágenes/imagenes-html/fondo2.jpg"></a>
+                  <a href="./personajes.html#draken"><img src="../../imágenes/imagenes-html/fondo3.jpg"></a>
+                  <a href="./personajes.html#hinata"><img src="../../imágenes/imagenes-html/fondo4.jpg"></a>
+              </section> 
+        </main>
+        <footer class="w-100 h-50vh position-absolute footer-general footer-inicio">
+                <div class="footer-top">
+                  <a href="https://whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/valenmeier/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+              <a href="https://github.com/Valenmeier" target="_blank"><i class="bi bi-github"></i></a>
+              <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+                </div>
+                <div class="footer-bot bg-dark">
+                  <div class="logo-footer d-flex flex-column align-items-center">
+                        <img src="../../imágenes/imagenes-html/tomanlogo.png" class="d-inline">
+                        <h4 class="text-light d-inline">Toman<b class="text-danger">.es</b></h4>
+                  </div>
+                  <div class="coderhouse-footer d-flex flex-column align-items-center" >
+                    <p class="text-secondary">Trabajo realizado como practica para coderhouse.</p>
+                    <img src="../../imágenes/imagenes-html/coderhouse.png">
+                    <p class="text-light">Copyright © Valentin Meier. Todos los derechos reservados</p>
+                  </div>
+
+                </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
