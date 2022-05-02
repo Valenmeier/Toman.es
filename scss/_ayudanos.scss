@@ -1,0 +1,144 @@
+@import "responsive";
+@import "estilos-personalizados";
+/*ayudanos*/
+.main-ayudanos {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 90vh;
+    padding-bottom: 2vw;
+}
+
+.fondo-ayudanos {
+    width: 100vw;
+    height: 90vh;
+    padding-top: 13vh;
+    background-color: #923cb5;
+    background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.borde-ayudanos {
+    width: 100%;
+    border: #3E0403 2px solid;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.texto-ayudanos {
+    text-align: center;
+}
+
+.texto-ayudanos h5 {
+    font-size: 6vw;
+}
+
+.texto-ayudanos p {
+    font-size: 3vw;
+}
+
+.imagen-ayudanos {
+    height: 50%;
+    padding: 0;
+}
+
+.imagen-ayudanos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+}
+
+.textarea-ayudanos {
+    height: 50%;
+    padding: 0;
+}
+
+.textarea-ayudanos textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 1vw;
+    border: none;
+}
+
+.ayudanos-contenedor {
+    width: 100%;
+    height: 25%;
+    margin: 0;
+}
+
+.boton-ayudanos-cont {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 12vw;
+    button {
+        @extend .botoness;
+        width: 80%;
+        height: 8vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        
+    }
+}
+
+/*footer ayudanos*/
+.footer-ayudanos {
+    position: relative;
+}
+@include pc {
+/*ayudanos*/
+    .fondo-ayudanos {
+        padding-top: 9vw;
+        padding-bottom: 10vw;
+        position: relative;
+    }
+
+    .texto-ayudanos h5 {
+        font-size: 2vw;
+    }
+
+    .texto-ayudanos p {
+        font-size: 1vw;
+    }
+
+    .borde-ayudanos {
+        height: 16vw;
+    }
+
+    .imagen-ayudanos {
+        height: 100%;
+    }
+
+    .textarea-ayudanos {
+        height: 100%;
+    }
+
+    .ayudanos-contenedor {
+        padding-top: 4vw;
+    }
+    .boton-ayudanos-cont { 
+        padding-top: .3vw;
+        button {
+            width: 80%;
+            height: 4vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+        }
+    }
+    
+}

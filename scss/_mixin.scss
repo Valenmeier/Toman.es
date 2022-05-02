@@ -1,0 +1,5 @@
+@mixin flex ($dis,$direc,$width){
+    display: $dis;
+    flex-direction:$direc;
+    width: $width;
+}

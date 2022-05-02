@@ -1,0 +1,26 @@
+@import "responsive";
+@import "estilos-personalizados";
+/*contactanos*/
+.main-contactanos {
+    position: relative;
+    padding-top: 14.3vh;
+    padding-bottom: 5.5vh;
+}
+.arriba {
+    padding-top: 4vw;
+}
+.footer-contactanos {
+    position: relative;
+    bottom: 0vh;
+    padding-bottom: -2vh;
+}
+#boton-contactanos {
+    @extend .botoness;
+}
+@include pc {
+ /*contactanos*/
+ .arriba {
+    padding-top: 4vw;
+}
+
+}

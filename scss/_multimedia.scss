@@ -1,0 +1,161 @@
+@import "responsive";
+/*Multimedia*/
+.main-multimedia {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 250vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh 100vh 50vh;
+
+
+}
+
+.multimedia-section-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1vw;
+    padding-top: 23vw;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    color: #fff;
+}
+
+.multimedia-section-1 h4 {
+    font-size: 10vw;
+}
+
+.multimedia-section-2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+    color: #fff;
+}
+
+.texto-seccion-2 {
+    width: 100%;
+    height: 30%;
+}
+
+.multimedia-section-2 h4 {
+    font-size: 10vw;
+}
+
+.multimedia-section-2 p {
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+
+.carousel-inner {
+    height: 50vw;
+}
+
+.imagenes-carrusel {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.imagenes-carrusel-bot {
+    object-position: 20% 30%;
+}
+
+.multimedia-section-3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #9fa4c4;
+    background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+    color: #fff;
+}
+
+.multimedia-section-3 h4 {
+    font-size: 7vw;
+    padding-top:2.5vw ;
+}
+
+.multimedia-section-3 p {
+    font-size: 5vw;
+}
+
+/*footer*/
+.footer-multimedia {
+    position: relative;
+}
+
+@include pc {
+/*multimedia*/
+.multimedia-section-1 {
+    padding-top: 5vw;
+}
+
+.multimedia-section-1 h4 {
+    font-size: 5vw;
+}
+
+.multimedia-section-1 p {
+    font-size: 1.5vw;
+}
+
+.multimedia-section-2 h4 {
+    font-size: 5vw;
+}
+
+.multimedia-section-2 p {
+    font-size: 1.5vw;
+    margin-bottom: 12vw;
+}
+
+.carousel-inner {
+    height: 30vw;
+}
+
+.imagenes-carrusel {
+    height: 60vw;
+    object-fit: scale-down;
+}
+
+.imagenes-carrusel-bot {
+    object-position: 50% 40%;
+}
+
+.multimedia-section-3 h4 {
+    font-size: 5vw;
+}
+
+.multimedia-section-3 p {
+    font-size: 1.5vw;
+}
+
+.multimedia-section-3 img {
+    width: 30vw;
+    align-self: center;
+}
+}

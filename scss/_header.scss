@@ -1,0 +1,69 @@
+@import "responsive";
+
+/*Inicio*/
+/*sonido cambiar*/
+.nav-sonido-on {
+    width: 9vw;
+}
+
+/*margin navbar*/
+.mtop-4 {
+    margin-top: 1.5rem;
+}
+
+/*color navbar*/
+.navbar-dark-2,
+.bg-dark-2 {
+    background-color: rgba(13, 13, 13, .90);
+}
+
+#sombra-nav {
+    color: #ffffff86;
+}
+
+#sombra-nav:hover {
+    color: #fff;
+    text-shadow: 0 0 0.667vh rgb(187, 55, 14), 0 0 1.334vh rgb(187, 55, 14), 0 0 2.668vh rgb(187, 55, 14);
+    background-color: transparent;
+}
+
+.text-secondary-2 {
+    color: #ffffff86;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.navbar {
+    z-index: 2000;
+    width: 100%;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 7vw;
+    cursor: pointer;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    img {
+    width: 30%;
+    height: 10vh;
+    object-fit: scale-down;
+    max-height: 10vh;
+    align-self: flex-end;
+    }
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    width: 25%;
+    border: none;
+}

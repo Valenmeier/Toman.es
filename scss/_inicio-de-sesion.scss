@@ -1,0 +1,84 @@
+@import "responsive";
+
+/*Inicio de sesion*/
+/*main*/
+.ingresar-fondo {
+    background-color: #3f0d12;
+    background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ingresar-responsive-text {
+    font-size: 4vw;
+}
+
+.ingresar-responsive-text h5 {
+    font-size: 8vw;
+    margin-top: 5vw;
+}
+
+.ingresar-responsive-text label:last-child {
+    font-size: 3.4vw;
+}
+
+.espacio-checkbox {
+    margin-right: 1vw;
+}
+
+.boton-ingresar {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-iniciar {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend .botoness;
+}
+
+.bg-dark-3 {
+    background-color: #00000045;
+}
+
+/*footer*/
+.footer-ingresar {
+    position:absolute;
+    top: 80vh;
+}
+
+@include pc {
+    /*main*/
+    .ingresar-fondo {
+        height: 100vh;
+    }
+    #pc-edit-ingresar {
+        margin-top: 2vw;
+        height: 80vh;
+        margin-bottom: 50vw;
+    }
+
+    .ingresar-responsive-text {
+        font-size: 2vw;
+    }
+
+    .ingresar-responsive-text h5 {
+        font-size: 5vw;
+    }
+
+    .ingresar-responsive-text label:last-child {
+        font-size: 1.2vw;
+    }
+    .footer-ingresar {
+        position:absolute;
+        top: 100vh;
+    }
+
+}

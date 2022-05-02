@@ -1,0 +1,53 @@
+@import "responsive";
+/*sobre-nosotros*/
+                    /*main*/
+                    .separacion-footer {
+                        position: relative;
+                        padding-top: 12vh;
+                        padding-bottom: 8vh;
+                        background-color: #42378f;
+                        background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+                    }
+                    .card-sobre-nosotros:nth-child(1) {
+                        background-color: #923cb5;
+                        background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+                        color: #fff;
+                        text-align: center;
+                        border: 3px solid #fff;
+                    }
+                    .card-sobre-nosotros:nth-child(2) {
+                        background-color: #000000;
+                        background-image: linear-gradient(315deg, #000000 0%, #5e5368 74%);
+                        color: #fff;
+                        text-align: center;
+                        border: 3px solid #fff;
+                    }
+                    .card-sobre-nosotros:nth-child(3) {
+                        background-color: #7ed6df;
+                        background-image: linear-gradient(315deg, #7ed6df 0%, #000000 74%);
+                        color: #fff;
+                        text-align: center;
+                        border: 3px solid #fff;
+                    }
+                    .card-sobre-nosotros:nth-child(4) {
+                        background-color: #e84393;
+                        background-image: linear-gradient(315deg, #e84393 0%, #000000 74%);
+                        color: #fff;
+                        text-align: center;
+                        border: 3px solid #fff;
+                    }
+                    .sobre-nosotros-titulo {
+                        color: #fff;
+                        font-size: 7.5vw;
+                    }
+                    /*footer*/
+                    .footer-sobre-nosotros {
+                        position: absolute;
+                    }
+
+@include pc {
+    /*sobre-nosotros*/
+    .sobre-nosotros-titulo {
+        font-size: 4vw;
+    }
+}

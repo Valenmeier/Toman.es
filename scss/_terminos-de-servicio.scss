@@ -1,0 +1,60 @@
+@import "responsive";
+/*terminos de servicio*/
+                    /*main*/
+                    .terminos-de-servicio-main {
+                        position: relative;
+                        padding-top: 14vh;
+                        padding-bottom: 5vh;
+                        font-size: 3vw;
+                        background-color: #ffcfdf;
+                        background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+                    }
+                    .posicionamiento {
+                        justify-self: center;
+                        width: 90%;
+                        height: 57vh;
+                        padding: 0%;
+                        margin: 0;
+                        border: #000000 2px solid;
+                        background-color: #000000;
+                        background-image: linear-gradient(315deg, #000000 0%, #b82e1f 74%);
+                        color: #fff;
+                        text-align:center;
+                    }
+                    .texto-terminos-de-servicio {
+                        height: 57vh;
+                        overflow-y: hidden;
+                        overflow-y: scroll;
+                        padding: 3vw;
+                        font-size: 4vw;
+                    }
+                    .texto-terminos-de-servicio div .tab-pane{
+                        height: 100%;    
+                        
+                    }
+                    .list-group-terminos {
+                        height: 100%;
+                        overflow-y: hidden;
+                        overflow-y: scroll;
+                    }
+                    .list-group-terminos div a{
+                        background-color: #000000;
+                        background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+                        color: #fff;
+                        border: .4px solid #fff;
+
+                    }
+                    /*footer*/
+                    .footer-terminos-de-servicio {
+                        position: relative;
+                        width: 100%;
+                    }
+@include pc {
+    /*terminos de servicio*/
+    .terminos-de-servicio-main {
+        font-size: 1vw;
+    }
+    .texto-terminos-de-servicio {
+        font-size: .8vw;
+    }
+}
