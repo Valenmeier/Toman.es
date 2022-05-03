@@ -26,22 +26,9 @@
                 <nav class="navbar navbar-expand-lg navbar-dark-2 bg-dark-2 fixed-top">
                         <div class="container-fluid">
                                 <img src="../../imágenes/iconos/sound.png" alt="sonido prendido" class="nav-sonido-on w-xxl-25" id="icon">
-                                <audio src="../../music/music-inicio.mp3" id="mySong" type="audio/mp3"></audio>
-                                <script>
-                                    var mySong = document.getElementById ("mySong")
-                                    var icon = document.getElementById ("icon")
-                                    icon.onclick = function () {
-                                        if(mySong.paused) {
-                                            mySong.play();
-                                            icon.src = "../../imágenes/iconos/sound.png";
-                                        }else{
-                                            mySong.pause();
-                                            icon.src = "../../imágenes/iconos/mute.png";
-                                        }
-                                    }
-                                </script>                  
+                                <audio src="../../music/music-inicio.mp3" id="mySong" type="audio/mp3"></audio>                  
                                 <a class="navbar-brand" href="./inicio.html">
-                                        <img src="../../imágenes/imagenes-html/tomanlogo.png" alt="" class="d-inline-block align-text-center logo-toman">
+                                        <img src="../../imágenes/imagenes-html/tomanlogo.png" alt="Toman logo" class="d-inline-block align-text-center logo-toman">
                                         Toman<b class="text-danger">.es</b>
                                 </a>
                           <button class="navbar-toggler d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="off">
@@ -85,7 +72,7 @@
             <h4 class="sobre-nosotros-titulo text-center pt-3 pb-3">¿Quienes somos?</h4>
             <div class="row justify-content-around">
                 <div class="card card-sobre-nosotros" style="width: 18rem;">
-                    <img src="../../imágenes/imagenes-html/takemichi-tierno.png" class="card-img-top" alt="...">
+                    <img src="../../imágenes/imagenes-html/takemichi-tierno.png" class="card-img-top" alt="Takemichi tierno">
                     <div class="card-body">
                     <h5 class="card-title">Takemichi</h5>
                     <p class="card-text">"En el pasado o en el presente, sino cambio yo, nada mas cambiara, nunca pienso volver a huir."</p>
@@ -93,7 +80,7 @@
                     </div>
                 </div>
                 <div class="card card-sobre-nosotros" style="width: 18rem;">
-                    <img src="../../imágenes/imagenes-html/draken-tierno.png" class="card-img-top" alt="...">
+                    <img src="../../imágenes/imagenes-html/draken-tierno.png" class="card-img-top" alt="Draken tierno">
                     <div class="card-body">
                     <h5 class="card-title">Draken</h5>
                     <p class="card-text">"Incluso si ganas, si estás asustado, entonces realmente no es una victoria."</p>
@@ -101,7 +88,7 @@
                     </div>
                 </div>
                 <div class="card card-sobre-nosotros" style="width: 18rem;">
-                    <img src="../../imágenes/imagenes-html/mikey-tierno.png" class="card-img-top" alt="...">
+                    <img src="../../imágenes/imagenes-html/mikey-tierno.png" class="card-img-top" alt="Mikey tierno">
                     <div class="card-body">
                     <h5 class="card-title">Mikey</h5>
                     <p class="card-text"> "No tiene nada de malo defender a quienes quieres, pero no cometas locuras, si te metes con quien no, podrías acabar muy mal."" </p>
@@ -109,7 +96,7 @@
                     </div>
                 </div>
                 <div class="card card-sobre-nosotros" style="width: 18rem;">
-                    <img src="../../imágenes/imagenes-html/hinata-tierna.png" class="card-img-top" alt="...">
+                    <img src="../../imágenes/imagenes-html/hinata-tierna.png" class="card-img-top" alt="Hinata tierna">
                     <div class="card-body">
                     <h5 class="card-title">Hinata</h5>
                     <p class="card-text"> "Me basta con caminar contigo y hablar de cosas sin importancia mientras pasamos el tiempo juntos." </p>
@@ -144,6 +131,18 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  
+  <script>
+    var mySong = document.getElementById ("mySong")
+    var icon = document.getElementById ("icon")
+    icon.onclick = function () {
+        if(mySong.paused) {
+            mySong.play();
+            icon.src = "../../imágenes/iconos/sound.png";
+        }else{
+            mySong.pause();
+            icon.src = "../../imágenes/iconos/mute.png";
+        }
+    }
+</script>
 </body>
 </html>

@@ -27,22 +27,9 @@
                         <div class="container-fluid">
                                 <img src="../../imágenes/iconos/sound.png" alt="sonido prendido" class="nav-sonido-on w-xxl-25" id="icon">
                                 <audio src="../../music/pagina3.mp3
-                                " id="mySong" type="audio/mp3"></audio>
-                                <script>
-                                    var mySong = document.getElementById ("mySong")
-                                    var icon = document.getElementById ("icon")
-                                    icon.onclick = function () {
-                                        if(mySong.paused) {
-                                            mySong.play();
-                                            icon.src = "../../imágenes/iconos/sound.png";
-                                        }else{
-                                            mySong.pause();
-                                            icon.src = "../../imágenes/iconos/mute.png";
-                                        }
-                                    }
-                                </script>                  
+                                " id="mySong" type="audio/mp3"></audio>                  
                                 <a class="navbar-brand" href="./inicio.html">
-                                        <img src="../../imágenes/imagenes-html/tomanlogo.png" alt="" class="d-inline-block align-text-center logo-toman">
+                                        <img src="../../imágenes/imagenes-html/tomanlogo.png" alt="Toman Logo" class="d-inline-block align-text-center logo-toman">
                                         Toman<b class="text-danger">.es</b>
                                 </a>
                           <button class="navbar-toggler d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="off">
@@ -103,16 +90,16 @@
                         </div>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="../../imágenes/imagenes-html/takemichi-fanart1.jpg" class="d-block w-100  imagenes-carrusel" alt="...">
+                            <img src="../../imágenes/imagenes-html/takemichi-fanart1.jpg" class="d-block w-100  imagenes-carrusel" alt="Takemichi">
                           </div>
                           <div class="carousel-item">
-                            <img src="../../imágenes/imagenes-html/mikey-fanart1.jpg" class="d-block w-100 imagenes-carrusel imagenes-carrusel-center" alt="...">
+                            <img src="../../imágenes/imagenes-html/mikey-fanart1.jpg" class="d-block w-100 imagenes-carrusel imagenes-carrusel-center" alt="Mikey">
                           </div>
                           <div class="carousel-item">
-                            <img src="../../imágenes/imagenes-html/draken-fanart1.jpg" class="d-block w-100 imagenes-carrusel" alt="...">
+                            <img src="../../imágenes/imagenes-html/draken-fanart1.jpg" class="d-block w-100 imagenes-carrusel" alt="Draken">
                           </div>
                           <div class="carousel-item">
-                            <img src="../../imágenes/imagenes-html/hinata-fanart1.jpg" class="d-block w-100 imagenes-carrusel imagenes-carrusel-bot" alt="...">
+                            <img src="../../imágenes/imagenes-html/hinata-fanart1.jpg" class="d-block w-100 imagenes-carrusel imagenes-carrusel-bot" alt="Hinata">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -156,6 +143,18 @@
     </footer>
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+    <script>
+      var mySong = document.getElementById ("mySong")
+      var icon = document.getElementById ("icon")
+      icon.onclick = function () {
+          if(mySong.paused) {
+              mySong.play();
+              icon.src = "../../imágenes/iconos/sound.png";
+          }else{
+              mySong.pause();
+              icon.src = "../../imágenes/iconos/mute.png";
+          }
+      }
+  </script>
   </body>
   </html>

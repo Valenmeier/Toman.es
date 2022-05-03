@@ -632,10 +632,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0; }
   .titulo-seccion2 h4 {
     width: 50%;
-    font-size: 6vw;
     color: #fff;
     align-self: center;
     margin: 0; }
+  #cambiar-fuente {
+    font-size: 5vw; }
   .contenido-seccion2-inicio {
     grid-row: 3 / 10;
     grid-column: 1 / 11;
