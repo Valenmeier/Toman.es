@@ -173,13 +173,19 @@
 
 .card-inicio-title {
     text-align: center;
-    font-size: 7vw;
+    font-size: 5vh;
     color: #ce100d;
     border-bottom: 1px solid #ce100d;
 }
-
+.card-inicio-hidden {
+    overflow-y: hidden;
+    overflow-y: scroll;
+    height: 50vh;
+    border: 1.5px solid #fff;
+    padding: 4vw;
+}
 .card-inicio-text {
-    font-size: 1.60vh;
+    font-size: 2vh;
     width: 100%;
     overflow-y: hidden;
     overflow-y: scroll;
@@ -395,11 +401,14 @@
         grid-column: 1 / 11;
         height: 100%;
     }
-
+    .card-inicio-hidden {
+        padding: 1vw;
+        overflow: hidden;
+        scroll-behavior: none;
+    }
     .card-inicio {
         overflow: hidden;
         height: 100%;
-
     }
 
     .card-inicio-text {

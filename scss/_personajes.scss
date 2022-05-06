@@ -87,13 +87,15 @@
     .card-personaje {
         height: 90%;
         width: 50%;
-        font-size: .8vw;
+        font-size: 1.5vw;
         display: flex;
         justify-content: center;
     }
 
     .card-personaje img {
-        width: 50%;
+        width: 40vw;
         align-self: center;
+        object-position: top;
+        margin-top: 30vw;
     }
 }
